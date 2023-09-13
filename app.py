@@ -1005,4 +1005,5 @@ with gr.Blocks(css='style.css') as demo:
 
 if __name__ == "__main__":
     multiprocessing.set_start_method('spawn')
-    demo.queue(status_update_rate=1).launch(share=True)
+    demo.queue(status_update_rate=1).launch(server_name="0.0.0.0", server_port=7860, share=False, inbrowser=True)
+
